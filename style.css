@@ -1,0 +1,45 @@
+@charset "UTF-8";
+td, th, table {
+  border: 2px solid #3d8a6c;
+}
+
+nav a:hover {
+  background-color: lightgray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 5px;
+}
+
+.starRating > td::before {
+  content: "⭐";
+}
+
+.star4::before {
+  content: "★★★★☆";
+}
+
+.star5::before {
+  content: "★★★★★";
+}
+
+h4 {
+  color: #3d8a6c;
+}
+
+@media only screen and (min-width: 900px) {
+  #page2id::before {
+    content: "This page is all about different types of pizza.";
+  }
+}
+@media only screen and (max-width: 900px) {
+  #page2id::before {
+    content: "Types of pizza";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

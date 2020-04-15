@@ -1,0 +1,48 @@
+$primaryColor: #3d8a6c;
+
+%tableBorder {
+  border: 2px solid $primaryColor;
+}
+nav {
+  a:hover {
+    background-color: lightgray;
+  }
+}
+
+table {
+  @extend %tableBorder;
+  border-collapse: collapse;
+}
+
+td, th {
+  @extend %tableBorder;
+  padding: 5px;
+
+}
+
+.starRating > td::before {
+  content: "\2B50 ";
+}
+
+.star4::before {
+  content: "\2605\2605\2605\2605\2606";
+}
+
+.star5::before {
+  content: "\2605\2605\2605\2605\2605";
+}
+
+h4 {
+  color: $primaryColor;
+}
+
+@media only screen and (min-width: 900px) {
+  #page2id::before {
+    content: "This page is all about different types of pizza.";
+  }
+}
+@media only screen and (max-width: 900px) {
+  #page2id::before {
+    content: "Types of pizza";
+  }
+}
